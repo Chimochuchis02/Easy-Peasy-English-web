@@ -11,9 +11,9 @@
         </div>
         <hr class="bg-secondary">
         <div class="pb-2">
-            <a href="#" class="text-white me-3"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/easy_.peasy_english/" class="text-white me-3"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="text-white"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="me-3" style="color:#1877F2;"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/easy_.peasy_english/" class="me-3" style="color:#E1306C;"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="me-3" style="color:#25D366;"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </div>
 </footer>

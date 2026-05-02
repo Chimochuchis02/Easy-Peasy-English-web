@@ -26,10 +26,6 @@
       /* Ajusta según que clase principal */
       flex: 1;
     }
-
-    #easy{
-      
-    }
   </style>
   <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
@@ -54,7 +50,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="ejercicios"><i class="fa-solid fa-star"
                     style="color: rgb(255, 212, 59);"></i> Ejercicios</a></li>
-              <li><a class="dropdown-item" href="Cursos"><i class="fa-regular fa-comment"></i> Cursos</a></li>
+              <li><a class="nav-link disabled" aria-disabled="true" href="Cursos"><i class="fa-regular fa-comment"></i> Cursos</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
