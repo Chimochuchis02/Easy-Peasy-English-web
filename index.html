@@ -1,8 +1,48 @@
 <div include-html="Layouts/header.html"></div>
 
 <main class="container py-5 text-center">
+    <section class="bg-light py-5">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center justify-content-center">
+                <div class="col-lg-8 col-xl-7 col-xxl-6">
+                    <div class="my-5 text-center text-xl-start">
+                        <h1 class="display-5 fw-bolder text-dark mb-2">Aprende Inglés sin complicaciones 🍋</h1>
+                        <p class="lead fw-normal text-muted mb-4">Clases personalizadas diseñadas para que hables desde
+                            el primer día. ¡Easy Peasy!</p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#form">Pedir informes</a>
+                            <a class="btn btn-outline-dark btn-lg px-4" href="#cursos">Ver cursos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
+                    <!-- Aquí iría la foto de tu mamá dando clases -->
+                    <img class="img-fluid rounded-3 my-5" src="public/img/hero-mama.jpg" alt="Clase de inglés" />
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <div class="card p-4 shadow-sm">
+        <h3>¿Tienes dudas? ¡Escríbenos!</h3>
+        <div class="mb-3">
+            <label class="form-label">Tu nombre:</label>
+            <input type="text" id="wa-name" class="form-control" placeholder="Ej. Rocio Lopez">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">¿Qué te interesa saber?</label>
+            <select id="wa-info" class="form-control">
+                <option value="Clases particulares">Clases particulares</option>
+                <option value="Cursos grupales">Cursos grupales</option>
+                <option value="Costos y horarios">Costos y horarios</option>
+            </select>
+        </div>
+        <button onclick="sendToWhatsApp()" class="btn btn-success w-100">
+            <i class="fa-brands fa-whatsapp me-2"></i> Enviar a WhatsApp
+        </button>
+    </div>
 </main>
+
 <div include-html="Layouts/footer.html"></div>
 
 <script>
@@ -29,4 +69,21 @@
         }
     }
     includeHTML();
+
+    function sendToWhatsApp() {
+        const phone = "5218713503367";
+        const name = document.getElementById('wa-name').value;
+        const info = document.getElementById('wa-info').value;
+
+        // Si no puso nombre, le recordamos (como un validador de código)
+        if (name === "") {
+            alert("Por favor, dinos tu nombre para saludarte.");
+            return;
+        }
+
+        const message = `Hola! Mi nombre es ${name}. Me interesa saber más sobre: ${info}.`;
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+        window.open(url, '_blank');
+    }
 </script>
