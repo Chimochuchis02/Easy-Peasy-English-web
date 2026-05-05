@@ -27,6 +27,7 @@
       flex: 1;
     }
   </style>
+
   <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><i class="fa-solid fa-lemon" style="color: rgb(255, 212, 59);"></i> Easy Peasy
@@ -44,27 +45,21 @@
             <a class="nav-link" href="Ejercicios"> <i class="fa-solid fa-user"></i> Sobre Nosotros</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               <i class="fa-solid fa-trophy" style="color: rgb(255, 212, 59);"></i> Ejercicios/Cursos
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="ejercicios"><i class="fa-solid fa-star"
                     style="color: rgb(255, 212, 59);"></i> Ejercicios</a></li>
-              <li><a class="nav-link disabled" aria-disabled="true" href="Cursos"><i class="fa-regular fa-comment"></i> Cursos</a></li>
+              <li><a class="dropdown-item" href="Cursos"><i class="fa-regular fa-comment"></i>
+                  Cursos </a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link">Disabled</a>
-          </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar informacion🍋" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
       </div>
     </div>
   </nav>
