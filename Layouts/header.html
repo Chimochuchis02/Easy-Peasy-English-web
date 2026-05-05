@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Easy Peasy English</title>
-  
+
   <link href="public/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -30,36 +30,42 @@
     }
   </style>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><i class="fa-solid fa-lemon" style="color: rgb(255, 212, 59);"></i> Easy Peasy
-        English</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-xl navbar-light bg-white fixed-top shadow-sm py-3">
+    <div class="container-fluid px-lg-5">
+      <!-- Logo con el Limoncillo (Estilo circular como en el footer) -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="public/img/Limoncillo.jpg" alt="Logo Easy Peasy" class="rounded-circle shadow-sm me-2"
+          style="width: 55px; height: 55px; border: 2px solid #FFD43B;">
+        <div class="d-none d-sm-block">
+          <span class="fw-bold text-dark mb-0 h4 d-block" style="letter-spacing: -1px;">EASY PEASY</span>
+          <small class="text-muted fw-bold text-uppercase" style="font-size: 0.6rem; letter-spacing: 2px;">English by
+            Teacher Ro</small>
+        </div>
+      </a>
+
+      <!-- Botón Móvil -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navEnglishJoy"
+        aria-controls="navEnglishJoy" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i> Inicio</a>
+
+      <!-- Links de Navegación -->
+      <div class="collapse navbar-collapse" id="navEnglishJoy">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold text-uppercase" style="font-size: 0.85rem;">
+          <li class="nav-item px-2">
+            <a class="nav-link text-dark" href="#">Inicio</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Sobrenosotros"> <i class="fa-solid fa-user"></i> Sobre Nosotros</a>
+          <li class="nav-item px-2">
+            <a class="nav-link text-dark" href="#Sobrenosotros">Nosotros</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <i class="fa-solid fa-trophy" style="color: rgb(255, 212, 59);"></i> Ejercicios/Cursos
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="ejercicios"><i class="fa-solid fa-star"
-                    style="color: rgb(255, 212, 59);"></i> Ejercicios</a></li>
-              <li><a class="dropdown-item" href="Cursos"><i class="fa-regular fa-comment"></i>
-                  Cursos </a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-            </ul>
+          <li class="nav-item px-2">
+            <a class="nav-link text-dark" href="#cursos">Nuestros Cursos</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link text-dark" href="#testimonios">Testimonios</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link text-dark" href="#contacto">Contáctanos</a>
           </li>
         </ul>
       </div>
