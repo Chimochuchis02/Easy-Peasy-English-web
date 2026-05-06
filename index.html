@@ -1,60 +1,56 @@
 <link rel="icon" type="icon/x-icon" href="/public/img/Limoncillo.jpg">
 <div include-html="Layouts/header.html"></div>
 
-<main class="container py-5 text-center">
+<main class="py-5 text-center">
+
     <!-- Primera Card -->
-    <section class="py-5 bg-white">
-        <div class="container px-5">
-            <!-- Badge superior para alinearse al estilo de "Nuestros Pilares" -->
-            <div class="text-center text-xl-start mb-2">
-                <h1 class="text-danger fw-bold tracking-widest">Bienvenido a Easy Peasy
-                    English</h1>
-            </div>
+    <section class="w-100 overflow-hidden" style="background-color: #00AEEF; color: white;">
+        <!-- Decoración de fondo -->
+        <div class="position-absolute translate-middle rounded-circle d-none d-lg-block"
+            style="width: 300px; height: 300px; background-color: #FF1493; top: 10%; left: -5%; opacity: 0.8;"></div>
 
-            <div class="row gx-5 align-items-center justify-content-center">
-                <div class="col-lg-8 col-xl-7 col-xxl-6">
-                    <div class="mb-5 text-center text-xl-start">
-                        <!-- Título con más peso visual -->
-                        <h2 class="display-4 fw-bold text-dark mb-3">Aprende Inglés sin complicaciones <i
-                                class="fa-solid fa-lemon" style="color: rgb(255, 212, 59);"></i></h2>
+        <!-- CAMBIO 1: Cambiamos px-5 por px-0 para que el contenido toque las orillas -->
+        <div class="container-fluid px-0 position-relative" style="z-index: 2;">
 
-                        <!-- Subtítulo con borde lateral sutil para imitar las tarjetas -->
-                        <div class="border-start border-danger border-4 ps-3 mb-4">
-                            <p class="lead fw-normal text-muted mb-0">
-                                Clases personalizadas diseñadas para que hables desde los primeros <strong> 2 </strong>
-                                años.
-                                <strong>Tu camino al bilingüismo empieza aquí.</strong>
-                            </p>
+            <!-- CAMBIO 2: Añadimos g-0 para eliminar el espacio entre columnas y que la imagen pegue a la derecha -->
+            <div class="row g-0 align-items-center justify-content-center">
+
+                <!-- Texto y CTAs -->
+                <!-- CAMBIO 3: Añadimos ps-lg-5 para que el texto no pegue al borde del monitor, pero el fondo sí -->
+                <div class="col-lg-8 col-xl-7 col-xxl-6 ps-lg-5">
+                    <div class="mb-5 text-center text-xl-start ps-lg-5">
+                        <div class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm">
+                            BIENVENIDO A EASY PEASY ENGLISH
                         </div>
 
-                        <!-- Botones con estilo moderno -->
+                        <h1 class="display-3 fw-bold mb-4" style="line-height: 1.1;">
+                            Hablar inglés es <br> <span style="color: #FFD43B;">posible</span>
+                            <i class="fa-solid fa-lemon ms-2"></i>
+                        </h1>
+
+                        <p class="lead fw-normal mb-5 opacity-90">
+                            Clases personalizadas diseñadas para que hables desde los primeros <strong>2 años</strong>.
+                            Tu camino al bilingüismo empieza aquí de la forma más divertida.
+                        </p>
+
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                            <a class="btn btn-danger btn-lg px-5 py-3 shadow-sm fw-bold" href="#contacto">
+                            <a class="btn btn-lg px-5 py-3 shadow-lg fw-bold text-white" href="#contacto"
+                                style="background-color: #FF1493; border-radius: 50px; border: none;">
                                 <i class="fa-solid fa-paper-plane me-2"></i>Pedir informes
                             </a>
-                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fw-bold" href="#cursos">
+                            <a class="btn btn-lg px-5 py-3 fw-bold shadow-sm" href="#cursos"
+                                style="background-color: #FFD43B; border-radius: 50px; color: #000; border: none;">
                                 Ver cursos
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Imagen con el efecto de tarjeta flotante que vimos en la referencia -->
-                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center position-relative">
-                    <div class="p-2 bg-light rounded-4 shadow-sm">
-                        <img class="img-fluid rounded-4 shadow" src="public/img/hero-mama.jpg"
-                            alt="Clase de inglés con la teacher Rocio" />
-                    </div>
-
-                    <!-- Badge flotante de confianza -->
-                    <div class="card position-absolute bottom-100 start-0 translate-middle-y border-0 shadow-lg p-3 ms-5 mt-n3"
-                        style="max-width: 220px; z-index: 10;">
-                        <div class="d-flex align-items-center">
-                            <div class="bg-success-subtle p-2 rounded-circle me-2">
-                                <i class="fa-solid fa-certificate text-success"></i>
-                            </div>
-                            <span class="fw-bold small text-dark">Garantía de Aprendizaje</span>
-                        </div>
+                <!-- Imagen Flotante -->
+                <div class="col-xl-4 col-xxl-6 d-none d-xl-block text-center position-relative mt-5 pt-4">
+                    <div class="p-3 bg-white rounded-5 shadow-lg transform-hover" style="transition: 0.3s;">
+                        <img class="img-fluid rounded-5 w-100" src="public/img/Happy_House.jpeg"
+                            alt="Clase en Easy Peasy English" style="object-fit: cover; max-height: 550px;" />
                     </div>
                 </div>
             </div>
@@ -62,34 +58,50 @@
     </section>
 
     <!-- Segunda Card -->
-    <section class="py-5 bg-white" id="Sobrenosotros">
-        <div class="container">
+    <section class="py-5 bg-white position-relative overflow-hidden" id="Sobrenosotros">
+        <!-- Decoraciones de fondo -->
+        <div class="position-absolute rounded-circle d-none d-lg-block shadow-lg"
+            style="width: 250px; height: 250px; background-color: #FFD43B; bottom: -10%; right: -5%; opacity: 0.6; z-index: 0;"></div>
+        <div class="position-absolute rounded-circle d-none d-lg-block"
+            style="width: 120px; height: 120px; background-color: #00AEEF; top: 10%; left: -2%; opacity: 0.15; z-index: 0;"></div>
+
+        <div class="container position-relative" style="z-index: 2;">
             <div class="row align-items-center">
                 <!-- Texto Izquierdo -->
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h6 class="text-danger fw-bold text-uppercase">Nuestros Pilares</h6>
-                    <h2 class="display-5 fw-bold mb-4">Compromiso con la Enseñanza Real</h2>
-                    <p class="text-muted">En Easy Peasy English, no solo enseñamos gramática; construimos la confianza
-                        necesaria para que hables inglés en el mundo real con integridad y fluidez.</p>
+                <div class="col-lg-5 mb-5 mb-lg-0 text-center text-lg-start">
+                    <div class="badge mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm" style="background-color: #FFD43B; color: #000;">
+                        NUESTROS PILARES
+                    </div>
+                    <h2 class="display-5 fw-bold mb-4" style="color: #00AEEF;">
+                        Compromiso con la <br><span style="color: #FF1493;">Enseñanza Real</span>
+                    </h2>
+                    <p class="lead fw-normal text-secondary mb-0">
+                        En Easy Peasy English, no solo enseñamos gramática; construimos la confianza
+                        necesaria para que hables inglés en el mundo real con integridad y fluidez.
+                    </p>
                 </div>
 
                 <!-- Tarjetas Derechas -->
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <div class="card h-100 border-0 shadow-sm border-start border-danger border-4 p-4">
-                                <div class="mb-3 text-danger"><i class="fa-solid fa-target-dot fa-2xl"></i></div>
-                                <h4 class="fw-bold">Misión</h4>
-                                <p class="text-muted">Desarrollar competencias lingüísticas para la vida a través de un
+                <div class="col-lg-7">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-lg rounded-5 p-4 transform-hover" style="transition: 0.3s; border-bottom: 6px solid #00AEEF !important;">
+                                <div class="mb-4 d-inline-flex align-items-center justify-content-center rounded-circle shadow" style="width: 65px; height: 65px; background-color: #00AEEF; color: white;">
+                                    <i class="fa-solid fa-bullseye fa-2xl"></i>
+                                </div>
+                                <h4 class="fw-bold mb-3" style="color: #00AEEF;">Misión</h4>
+                                <p class="text-secondary mb-0">Desarrollar competencias lingüísticas para la vida a través de un
                                     enfoque práctico, preparando alumnos capaces de comunicarse en cualquier entorno.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="card h-100 border-0 shadow-sm border-start border-danger border-4 p-4">
-                                <div class="mb-3 text-danger"><i class="fa-solid fa-eye fa-2xl"></i></div>
-                                <h4 class="fw-bold">Visión</h4>
-                                <p class="text-muted">Ser la opción educativa de inglés referente en Torreón por nuestra
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-lg rounded-5 p-4 transform-hover" style="transition: 0.3s; border-bottom: 6px solid #FF1493 !important;">
+                                <div class="mb-4 d-inline-flex align-items-center justify-content-center rounded-circle shadow" style="width: 65px; height: 65px; background-color: #FF1493; color: white;">
+                                    <i class="fa-solid fa-eye fa-2xl"></i>
+                                </div>
+                                <h4 class="fw-bold mb-3" style="color: #FF1493;">Visión</h4>
+                                <p class="text-secondary mb-0">Ser la opción educativa de inglés referente en Torreón por nuestra
                                     innovación pedagógica y calidad humana.</p>
                             </div>
                         </div>
@@ -100,43 +112,60 @@
     </section>
 
     <!-- Tercera Card -->
-    <section class="py-5 bg-light">
-        <div class="container">
+    <section class="py-5 bg-light position-relative overflow-hidden">
+        <!-- Decoraciones de fondo -->
+        <div class="position-absolute rounded-circle d-none d-lg-block"
+            style="width: 300px; height: 300px; background-color: #00AEEF; top: -5%; right: -5%; opacity: 0.1; z-index: 0;"></div>
+        <div class="position-absolute rounded-circle d-none d-lg-block"
+            style="width: 150px; height: 150px; background-color: #FF1493; bottom: 5%; left: -2%; opacity: 0.1; z-index: 0;"></div>
+
+        <div class="container position-relative" style="z-index: 2;">
             <div class="row align-items-center">
-                <div class="col-lg-6 position-relative">
-                    <img src="public/img/clase-ejemplo.jpg" class="img-fluid rounded-4 shadow" alt="Clase de inglés">
+                <div class="col-lg-6 position-relative text-center">
+                    <img src="public/img/clase-ejemplo.jpg" class="img-fluid rounded-5 shadow-lg transform-hover" style="transition: 0.3s; object-fit: cover; max-height: 500px;" alt="Clase de inglés">
                     <!-- Tarjeta flotante -->
-                    <div class="card position-absolute bottom-0 start-0 mb-4 ms-4 border-0 shadow-lg p-3 d-none d-md-block"
-                        style="max-width: 200px;">
-                        <div class="d-flex align-items-center">
-                            <i class="fa-solid fa-circle-check text-success me-2"></i>
-                            <span class="fw-bold small">CALIDAD REAL</span>
+                    <div class="card position-absolute bottom-0 start-0 mb-4 ms-4 ms-lg-0 ms-xl-4 border-0 shadow-lg p-3 d-none d-md-block rounded-4 transform-hover"
+                        style="max-width: 220px; transition: 0.3s; border-left: 5px solid #FFD43B !important;">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="d-flex align-items-center justify-content-center rounded-circle me-2 shadow-sm" style="width: 30px; height: 30px; background-color: #FFD43B; color: #000;">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span class="fw-bold small" style="color: #00AEEF;">CALIDAD REAL</span>
                         </div>
-                        <p class="small text-muted mb-0">Programas adaptados a tus necesidades personales.</p>
+                        <p class="small text-secondary mb-0 text-start">Programas adaptados a tus necesidades personales.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 ps-lg-5 mt-5 mt-lg-0">
-                    <h6 class="text-danger fw-bold text-uppercase">Oferta Educativa</h6>
-                    <h2 class="display-5 fw-bold mb-4">Preparación para el Mundo Global</h2>
+                
+                <div class="col-lg-6 ps-lg-5 mt-5 mt-lg-0 text-center text-lg-start">
+                    <div class="badge mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm" style="background-color: #FFD43B; color: #000;">
+                        OFERTA EDUCATIVA
+                    </div>
+                    <h2 class="display-5 fw-bold mb-4" style="color: #00AEEF;">
+                        Preparación para el <br><span style="color: #FF1493;">Mundo Global</span>
+                    </h2>
 
-                    <div class="card border-0 shadow-sm mb-3 p-3">
+                    <!-- Tarjeta 1 -->
+                    <div class="card border-0 shadow-sm mb-3 p-3 rounded-4 transform-hover" style="transition: 0.3s;">
                         <div class="d-flex align-items-center">
-                            <div class="bg-light p-3 rounded-circle me-3 text-danger"><i class="fa-solid fa-clock"></i>
+                            <div class="shadow-sm p-3 rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 55px; height: 55px; background-color: #00AEEF; color: white;">
+                                <i class="fa-solid fa-clock fa-xl"></i>
                             </div>
-                            <div>
-                                <h5 class="mb-0 fw-bold">Flexibilidad de Horarios</h5>
-                                <p class="mb-0 text-muted small">Mañana, tarde o noche: nos adaptamos a ti.</p>
+                            <div class="text-start">
+                                <h5 class="mb-0 fw-bold" style="color: #00AEEF;">Flexibilidad de Horarios</h5>
+                                <p class="mb-0 text-secondary small">Mañana, tarde o noche: nos adaptamos a ti.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card border-0 shadow-sm p-3">
+                    <!-- Tarjeta 2 -->
+                    <div class="card border-0 shadow-sm p-3 rounded-4 transform-hover" style="transition: 0.3s;">
                         <div class="d-flex align-items-center">
-                            <div class="bg-light p-3 rounded-circle me-3 text-dark"><i class="fa-solid fa-terminal"></i>
+                            <div class="shadow-sm p-3 rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 55px; height: 55px; background-color: #FF1493; color: white;">
+                                <i class="fa-solid fa-comments fa-xl"></i>
                             </div>
-                            <div>
-                                <h5 class="mb-0 fw-bold">Talleres Prácticos</h5>
-                                <p class="mb-0 text-muted small">Club de conversación, juegos y dinámicas grupales.</p>
+                            <div class="text-start">
+                                <h5 class="mb-0 fw-bold" style="color: #FF1493;">Talleres Prácticos</h5>
+                                <p class="mb-0 text-secondary small">Club de conversación, juegos y dinámicas grupales.</p>
                             </div>
                         </div>
                     </div>
@@ -146,24 +175,65 @@
     </section>
 
     <!-- Cuarta Card Maps -->
-    <section class="py-5 bg-light">
-        <div class="container">
+    <section class="py-5 bg-white position-relative overflow-hidden">
+        <!-- Decoraciones de fondo -->
+        <div class="position-absolute rounded-circle d-none d-lg-block"
+            style="width: 200px; height: 200px; background-color: #FFD43B; top: 10%; left: -5%; opacity: 0.3; z-index: 0;"></div>
+
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="text-center mb-5">
+                <div class="badge mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm" style="background-color: #FFD43B; color: #000;">
+                    VISÍTANOS
+                </div>
+                <h2 class="display-5 fw-bold" style="color: #00AEEF;">
+                    Nuestra <span style="color: #FF1493;">Ubicación</span>
+                </h2>
+            </div>
+
             <div class="row justify-content-center">
                 <div class="col-lg-11 position-relative">
 
-                    <!-- Contenedor del Mapa (Capa Base) -->
-                    <div class="rounded-4 overflow-hidden shadow-sm border" style="height: 500px; z-index: 1;">
+                    <!-- Contenedor del Mapa -->
+                    <div class="rounded-5 overflow-hidden shadow-lg border-0 transform-hover" style="height: 500px; z-index: 1; transition: 0.3s; border-bottom: 6px solid #FF1493 !important;" id="maps">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7199.6834772101265!2d-103.4355909749208!3d25.543648109723804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCalle%2027%20%23213%20norte%20entre%20Ocampo%20y%2C%20Escobedo%2C%20Primero%20de%20Cobi%C3%A1n%20Centro%2C%2027000%20Torre%C3%B3n%2C%20Coah.!5e0!3m2!1ses-419!2smx!4v1778007470898!5m2!1ses-419!2smx"
                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
                         </iframe>
                     </div>
 
+                    <!-- Tarjeta Flotante Desktop -->
+                    <div class="card position-absolute top-0 end-0 mt-4 me-4 border-0 shadow-lg p-4 d-none d-lg-block rounded-4 transform-hover"
+                        style="max-width: 300px; z-index: 2; transition: 0.3s; border-top: 5px solid #00AEEF !important;">
+                        <h4 class="fw-bold mb-3" style="color: #00AEEF;">Contacto</h4>
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="d-flex align-items-center justify-content-center rounded-circle me-3 shadow-sm" style="width: 40px; height: 40px; background-color: #FF1493; color: white;">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <p class="mb-0 text-secondary fw-bold">+52 871 350 3367</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center justify-content-center rounded-circle me-3 shadow-sm" style="width: 40px; height: 40px; background-color: #FFD43B; color: #000;">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <p class="mb-0 text-secondary fw-bold">Torreón, Coah.</p>
+                        </div>
+                    </div>
+
                     <!-- Versión para Móvil -->
-                    <div class="card bg-dark text-white p-4 border-0 shadow mt-3 d-lg-none mx-2 rounded-4">
-                        <h4 class="fw-bold mb-3 text-danger">Contacto</h4>
-                        <p class="mb-2"><i class="fa-solid fa-phone me-2"></i> +52 871 350 3367</p>
-                        <p class="mb-0"><i class="fa-solid fa-location-dot me-2"></i> Torreón, Coah.</p>
+                    <div class="card bg-white p-4 border-0 shadow-lg mt-4 d-lg-none mx-2 rounded-4" style="border-top: 5px solid #00AEEF !important;">
+                        <h4 class="fw-bold mb-4 text-center" style="color: #00AEEF;">Contacto</h4>
+                        <div class="d-flex align-items-center mb-3 justify-content-center">
+                            <div class="d-flex align-items-center justify-content-center rounded-circle me-3 shadow-sm" style="width: 40px; height: 40px; background-color: #FF1493; color: white;">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <p class="mb-0 text-secondary fw-bold">+52 871 350 3367</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="d-flex align-items-center justify-content-center rounded-circle me-3 shadow-sm" style="width: 40px; height: 40px; background-color: #FFD43B; color: #000;">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <p class="mb-0 text-secondary fw-bold">Torreón, Coah.</p>
+                        </div>
                     </div>
 
                 </div>
@@ -172,19 +242,29 @@
     </section>
 
     <!-- Quinta Card Form Whatsapp-->
-    <section id="contacto" class="py-5 bg-white">
-        <div class="container px-5">
+    <section id="contacto" class="py-5 bg-light position-relative overflow-hidden">
+        <!-- Decoraciones de fondo -->
+        <div class="position-absolute rounded-circle d-none d-lg-block"
+            style="width: 250px; height: 250px; background-color: #00AEEF; top: -5%; left: -5%; opacity: 0.1; z-index: 0;"></div>
+        <div class="position-absolute rounded-circle d-none d-lg-block shadow-lg"
+            style="width: 150px; height: 150px; background-color: #FF1493; bottom: -5%; right: -2%; opacity: 0.2; z-index: 0;"></div>
+
+        <div class="container px-4 px-lg-5 position-relative" style="z-index: 2;">
             <div class="row gx-5 align-items-center">
                 <!-- Lado Izquierdo: Texto Informativo -->
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h2 class="display-5 fw-bold text-danger mb-3">Atención a Alumnos</h2>
-                    <p class="lead mb-4">
-                        Bienvenido al portal de comunicación de **Easy Peasy English**. Si tiene alguna <strong>duda
-                            académica o consulta sobre nuestros cursos</strong>, por favor complete el formulario
-                        adjunto.
+                <div class="col-lg-6 mb-5 mb-lg-0 text-center text-lg-start">
+                    <div class="badge mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm" style="background-color: #FFD43B; color: #000;">
+                        CONTACTO DIRECTO
+                    </div>
+                    <h2 class="display-5 fw-bold mb-4" style="color: #00AEEF;">
+                        Atención a <br><span style="color: #FF1493;">Alumnos</span>
+                    </h2>
+                    <p class="lead text-secondary mb-4">
+                        Bienvenido al portal de comunicación de <strong>Easy Peasy English</strong>. Si tienes alguna 
+                        duda académica o consulta sobre nuestros cursos, por favor completa el formulario adjunto.
                     </p>
-                    <div class="border-start border-danger border-4 ps-4 italic">
-                        <p class="text-muted fst-italic mb-0">
+                    <div class="border-start border-4 ps-4 text-start" style="border-color: #FFD43B !important;">
+                        <p class="text-secondary fst-italic mb-0 fw-medium">
                             "Comprometidos con la enseñanza personalizada y el desarrollo bilingüe de nuestros
                             estudiantes."
                         </p>
@@ -193,32 +273,33 @@
 
                 <!-- Lado Derecho: Tarjeta del Formulario -->
                 <div class="col-lg-6">
-                    <div class="card border-0 shadow-lg rounded-4 p-4 p-sm-5">
+                    <div class="card border-0 shadow-lg rounded-5 p-4 p-sm-5 transform-hover" style="transition: 0.3s; border-top: 6px solid #FF1493 !important;">
                         <div class="text-center mb-4">
-                            <h3 class="fw-bold">Dudas y Preguntas</h3>
-                            <hr class="w-25 mx-auto border-danger border-2">
+                            <h3 class="fw-bold" style="color: #00AEEF;">Dudas y Preguntas</h3>
+                            <hr class="w-25 mx-auto border-2 opacity-100" style="color: #FFD43B;">
                         </div>
 
                         <form id="contactForm">
                             <!-- Nombre -->
                             <div class="form-floating mb-3">
-                                <input class="form-control bg-light border-0" id="wa-name" type="text"
+                                <input class="form-control bg-light border-0 rounded-4" id="wa-name" type="text"
                                     placeholder="Ej. Juan Pérez" />
                                 <label for="wa-name">Nombre Completo</label>
                             </div>
 
                             <!-- Asunto / Comentarios -->
                             <div class="form-floating mb-4">
-                                <textarea class="form-control bg-light border-0" id="wa-info"
+                                <textarea class="form-control bg-light border-0 rounded-4" id="wa-info"
                                     placeholder="Describa su solicitud..." style="height: 10rem"></textarea>
                                 <label for="wa-info">Asunto o Comentarios</label>
                             </div>
 
                             <!-- Botón de Envío -->
-                            <div class="d-grid">
+                            <div class="d-grid mt-2">
                                 <button onclick="sendToWhatsApp()"
-                                    class="btn btn-danger btn-lg rounded-3 py-3 fw-bold shadow-sm" type="button">
-                                    <i class="fa-solid fa-lemon" style="color: rgb(255, 212, 59);"></i> Enviar Solicitud
+                                    class="btn btn-lg py-3 fw-bold shadow-lg text-white transform-hover" type="button"
+                                    style="background-color: #FF1493; border-radius: 50px; border: none; transition: 0.3s;">
+                                    <i class="fa-solid fa-lemon me-2" style="color: #FFD43B;"></i> Enviar Solicitud
                                 </button>
                             </div>
                         </form>
