@@ -1,0 +1,39 @@
+name: Deploy Easy Peasy to Pages
+
+# Se activa cada vez que haces un 'push' a la rama principal (main)
+on:
+   push:
+    branches: ["main"]
+
+# Permisos necesarios para que el bot de GitHub pueda escribir en Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# En esta parte empiezan las partes de seguridad, comenzando porque el bot prenda una maquina virtual, en este caso de Ubuntu
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+        # En esta otra parte del codigo lo que hago es utilizar los uses para que mande mis archivos a dicha maquina virtual
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v4
+        # Aqui configura todo y es otro check de que todo este jalando correctamente y que no este fallando nada
+
+      - name: Subir el contenido al servidor de Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Sube todo el contenido de la carpeta raíz y empaqueta todo como un "Artifact"
+          path: '.'
+
+      - name: Desplegar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        # Aqui ya hace el CI final...El deploy y no delivery, ya hace correr la pagina para que el usuario la vea...
