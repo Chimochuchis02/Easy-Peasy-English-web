@@ -1,149 +1,245 @@
 <link rel="icon" type="icon/x-icon" href="/public/img/Limoncillo.jpg">
 <div include-html="Layouts/header.html"></div>
 
-<main class="container py-5 text-center">
+<main class="py-5 text-center">
     <!--Carrousel Photos Class -->
-    <section id="instagram-feed" class="py-5" style="background-color: #f8f9fa;">
-        <div class="container text-center">
-            <h2 class="display-4 fw-bold mb-5" style="color: #00AEEF;">Nuestra Comunidad <i
+    <section id="instagram-feed" class="w-100 overflow-hidden position-relative"
+        style="background-color: #00AEEF; color: white;">
+        <!-- Decoración de fondo -->
+        <div class="position-absolute translate-middle rounded-circle d-none d-lg-block"
+            style="width: 300px; height: 300px; background-color: #FF1493; top: 10%; left: -5%; opacity: 0.8;"></div>
+
+        <div class="container-fluid px-0 position-relative py-5" style="z-index: 2;">
+
+            <h2 class="display-4 fw-bold mb-5 text-white"><span style="color:#FFD43B;">Nuestra Comunidad</span> <i
                     class="fa-brands fa-instagram" style="color: #FF1493;"></i></h2>
 
-            <div id="instaCarousel" class="carousel slide shadow-lg rounded-5 overflow-hidden" data-bs-ride="carousel"
-                style="max-width: 900px; margin: 0 auto; border: 8px solid white;">
+            <div id="instaCarousel" class="carousel slide pb-5" data-bs-ride="carousel">
 
                 <div class="carousel-inner">
+                    <!-- Item 1 -->
                     <div class="carousel-item active">
-                        <div class="row g-0 align-items-center bg-white">
-                            <div class="col-md-6">
-                                <img src="public/img/Happy_House.jpeg" class="d-block w-100" alt="Clase 1"
-                                    style="height: 450px; object-fit: cover;">
-                            </div>
-                            <div class="col-md-6 p-4 text-dark text-start">
-                                <div class="d-flex align-items-center mb-3">
-                                    <img src="public/img/Limoncillo.jpg" class="rounded-circle me-2" width="40">
-                                    <span class="fw-bold">easy_.peasy_english</span>
+                        <div class="row g-0 align-items-center justify-content-center">
+                            <!-- Texto -->
+                            <div class="col-12 col-xl-7 col-xxl-6 ps-lg-5 mb-5 mb-xl-0">
+                                <div class="text-center text-xl-start ps-lg-5">
+                                    <div
+                                        class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm">
+                                        <i class="fa-brands fa-instagram me-2"></i> easy_.peasy_english
+                                    </div>
+                                    <h1 class="display-5 fw-bold mb-4" style="line-height: 1.1;">
+                                        ¡Aprender jugando es nuestra <br> <span style="color: #FFD43B;">metodología
+                                        </span> <span style="color:#FF1493;"> favorita! </span>
+                                    </h1>
+                                    <p class="lead fw-normal mb-5 opacity-90 px-4 px-xl-0">
+                                        Hoy los niños practicaron los colores jugando con unas tarjetas!!!, tanto
+                                        virtuales desde su laptop, hasta unas reales. <i class="fa-solid fa-lemon"
+                                            style="color:#FFD43B;"></i><i class="fa-solid fa-star"
+                                            style="color:#FFD43B;"></i>
+                                    </p>
+                                    <div
+                                        class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start px-4 px-xl-0">
+                                        <a class="btn btn-lg px-5 py-3 shadow-lg fw-bold text-white"
+                                            href="https://www.instagram.com/easy_.peasy_english/" target="_blank"
+                                            style="background-color: #FF1493; border-radius: 50px; border: none;">
+                                            <i class="fa-brands fa-instagram me-2"></i>Ver en Instagram
+                                        </a>
+                                    </div>
                                 </div>
-                                <p class="mb-4">¡Aprender jugando es nuestra metodología favorita! Hoy los niños
-                                    practicaron los colores con limones reales. 🍋✨</p>
-                                <a href="https://www.instagram.com/easy_.peasy_english/" target="_blank"
-                                    class="btn fw-bold text-white rounded-pill px-4"
-                                    style="background-color: #FF1493;">Ver en Instagram</a>
+                            </div>
+                            <!-- Imagen -->
+                            <div
+                                class="col-11 col-md-8 col-xl-4 col-xxl-6 text-center position-relative px-3 px-xl-0 mt-4 mt-xl-0">
+                                <div class="p-3 bg-white rounded-5 shadow-lg transform-hover mx-auto"
+                                    style="transition: 0.3s; max-width: 550px;">
+                                    <img class="img-fluid rounded-5 w-100" src="public/img/Happy_House.jpeg"
+                                        alt="Clase 1" style="object-fit: cover; height: 450px;" />
+                                </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Item 2 -->
                     <div class="carousel-item">
-                        <div class="row g-0 align-items-center bg-white">
-                            <div class="col-md-6">
-                                <img src="public/img/Happy_House_01.jpeg" class="d-block w-100" alt="Clase 2"
-                                    style="height: 450px; object-fit: cover;">
-                            </div>
-                            <div class="col-md-6 p-4 text-dark text-start">
-                                <div class="d-flex align-items-center mb-3">
-                                    <img src="public/img/Limoncillo.jpg" class="rounded-circle me-2" width="40">
-                                    <span class="fw-bold">easy_.peasy_english</span>
+                        <div class="row g-0 align-items-center justify-content-center">
+                            <!-- Texto -->
+                            <div class="col-12 col-xl-7 col-xxl-6 ps-lg-5 mb-5 mb-xl-0">
+                                <div class="text-center text-xl-start ps-lg-5">
+                                    <div
+                                        class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm">
+                                        <i class="fa-brands fa-instagram me-2"></i> easy_.peasy_english
+                                    </div>
+                                    <h1 class="display-5 fw-bold mb-4" style="line-height: 1.1;">
+                                        Clases <br> <span style="color: #FFD43B;">personalizadas</span>
+                                    </h1>
+                                    <p class="lead fw-normal mb-5 opacity-90 px-4 px-xl-0">
+                                        Se adaptan al ritmo de cada alumno. ¡Inscripciones abiertas
+                                        <strong> <span style="color:#FF1493;">AHORA</span></strong>! <i
+                                            class="fa-solid fa-rocket" style="color: red;"></i>
+                                    </p>
+                                    <div
+                                        class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start px-4 px-xl-0">
+                                        <a class="btn btn-lg px-5 py-3 shadow-lg fw-bold text-white"
+                                            href="https://www.instagram.com/easy_.peasy_english/" target="_blank"
+                                            style="background-color: #FF1493; border-radius: 50px; border: none;">
+                                            <i class="fa-brands fa-instagram me-2"></i>Ver en Instagram
+                                        </a>
+                                    </div>
                                 </div>
-                                <p class="mb-4">Nuestras clases personalizadas se adaptan al ritmo de cada alumno.
-                                    ¡Inscripciones abiertas <strong>AHORA</strong>! <i class="fa-solid fa-rocket"
-                                        style="color: rgb(255, 0, 0);"></i></p>
-                                <a href="https://www.instagram.com/easy_.peasy_english/" target="_blank"
-                                    class="btn fw-bold text-white rounded-pill px-4"
-                                    style="background-color: #FF1493; color: #FFFF;">Ver en Instagram</a>
+                            </div>
+                            <!-- Imagen -->
+                            <div
+                                class="col-11 col-md-8 col-xl-4 col-xxl-6 text-center position-relative px-3 px-xl-0 mt-4 mt-xl-0">
+                                <div class="p-3 bg-white rounded-5 shadow-lg transform-hover mx-auto"
+                                    style="transition: 0.3s; max-width: 550px;">
+                                    <img class="img-fluid rounded-5 w-100" src="public/img/Happy_House_01.jpeg"
+                                        alt="Clase 2" style="object-fit: cover; height: 450px;" />
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Item 3 -->
                     <div class="carousel-item">
-                        <div class="row g-0 align-items-center bg-white">
-                            <div class="col-md-6">
-                                <img src="public/img/Happy_House_02.jpeg" class="d-block w-100" alt="Clase 2"
-                                    style="height: 450px; object-fit: cover;">
-                            </div>
-                            <div class="col-md-6 p-4 text-dark text-start">
-                                <div class="d-flex align-items-center mb-3">
-                                    <img src="public/img/Limoncillo.jpg" class="rounded-circle me-2" width="40">
-                                    <span class="fw-bold">easy_.peasy_english</span>
+                        <div class="row g-0 align-items-center justify-content-center">
+                            <!-- Texto -->
+                            <div class="col-12 col-xl-7 col-xxl-6 ps-lg-5 mb-5 mb-xl-0">
+                                <div class="text-center text-xl-start ps-lg-5">
+                                    <div
+                                        class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm">
+                                        <i class="fa-brands fa-instagram me-2"></i> easy_.peasy_english
+                                    </div>
+                                    <h1 class="display-5 fw-bold mb-4" style="line-height: 1.1;">
+                                        Practicamos las <br> <span style="color: #FFD43B;">4</span> <strong> <span
+                                                style="color:#FF1493;"> skills </span> </strong>
+                                        <span style="color:#FFD43B;">básicas</span>
+                                    </h1>
+                                    <p class="lead fw-normal mb-5 opacity-90 px-4 px-xl-0">
+                                        A la hora de aprender inglés: <strong> <span
+                                                style="color:#FFD43B;">Listening</span> </strong>,
+                                        <strong><span style="color:#FF1493;">Speaking</span> </strong>, <strong> <span
+                                                style="color:#FFD43B;">Grammar</span></strong> and
+                                        <strong><span style="color:#FF1493;">Writing</span></strong>. <i
+                                            class="fa-solid fa-book" style="color: #FFD43B;"></i>
+                                    </p>
+                                    <div
+                                        class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start px-4 px-xl-0">
+                                        <a class="btn btn-lg px-5 py-3 shadow-lg fw-bold text-white"
+                                            href="https://www.instagram.com/easy_.peasy_english/" target="_blank"
+                                            style="background-color: #FF1493; border-radius: 50px; border: none;">
+                                            <i class="fa-brands fa-instagram me-2"></i>Ver en Instagram
+                                        </a>
+                                    </div>
                                 </div>
-                                <p class="mb-4">Cada clase practicamos una de las 4 skills basicas a la hora de aprender
-                                    ingles:
-                                    <strong>Listening</strong> ,<strong>Speaking</strong> ,<strong>Grammar</strong> and
-                                    <strong>Writting</strong> <i class="fa-solid fa-book"
-                                        style="color: rgb(255, 0, 0);"></i>
-                                </p>
-                                <a href="https://www.instagram.com/easy_.peasy_english/" target="_blank"
-                                    class="btn fw-bold text-white rounded-pill px-4"
-                                    style="background-color: #FF1493; color: #FFFF;">Ver en Instagram</a>
+                            </div>
+                            <!-- Imagen -->
+                            <div
+                                class="col-11 col-md-8 col-xl-4 col-xxl-6 text-center position-relative px-3 px-xl-0 mt-4 mt-xl-0">
+                                <div class="p-3 bg-white rounded-5 shadow-lg transform-hover mx-auto"
+                                    style="transition: 0.3s; max-width: 550px;">
+                                    <img class="img-fluid rounded-5 w-100" src="public/img/Happy_House_02.jpeg"
+                                        alt="Clase 3" style="object-fit: cover; height: 450px;" />
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Item 4 -->
                     <div class="carousel-item">
-                        <div class="row g-0 align-items-center bg-white">
-                            <div class="col-md-6">
-                                <img src="public/img/Happy_House_03.jpeg" class="d-block w-100" alt="Clase 2"
-                                    style="height: 450px; object-fit: cover;">
-                            </div>
-                            <div class="col-md-6 p-4 text-dark text-start">
-                                <div class="d-flex align-items-center mb-3">
-                                    <img src="public/img/Limoncillo.jpg" class="rounded-circle me-2" width="40">
-                                    <span class="fw-bold">easy_.peasy_english</span>
+                        <div class="row g-0 align-items-center justify-content-center">
+                            <!-- Texto -->
+                            <div class="col-12 col-xl-7 col-xxl-6 ps-lg-5 mb-5 mb-xl-0">
+                                <div class="text-center text-xl-start ps-lg-5">
+                                    <div
+                                        class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm">
+                                        <i class="fa-brands fa-instagram me-2"></i> easy_.peasy_english
+                                    </div>
+                                    <h1 class="display-5 fw-bold mb-4" style="line-height: 1.1;">
+                                        Clases para <br> <span style="color: #FFD43B;">todas</span> <span
+                                            style="color: #FF1493;">las</span> <span
+                                            style="color:#FFD43B;">edades</span>
+                                    </h1>
+                                    <p class="lead fw-normal mb-5 opacity-90 px-4 px-xl-0">
+                                        Pasando desde los más pequeños de <span style="color:#FF1493;"><strong>6 a 12
+                                                años</strong></span>, adolescentes de
+                                        <span style="color:#FFD43B;"><strong>13 a 17 años</strong></span> y adultos de
+                                        <span style="color:#FF1493;"><strong>18 años en adelante</strong></span>!
+                                        <i class="fa-solid fa-lemon" style="color: #FFD43B;"></i>
+                                    </p>
+                                    <div
+                                        class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start px-4 px-xl-0">
+                                        <a class="btn btn-lg px-5 py-3 shadow-lg fw-bold text-white"
+                                            href="https://www.instagram.com/easy_.peasy_english/" target="_blank"
+                                            style="background-color: #FF1493; border-radius: 50px; border: none;">
+                                            <i class="fa-brands fa-instagram me-2"></i>Ver en Instagram
+                                        </a>
+                                    </div>
                                 </div>
-                                <p class="mb-4">Tenemos clases para todas las edades: pasando desde los mas pequeños
-                                    de <strong>6 a 12 años</strong> , adolescentes <strong>13 a 17 años</strong> y
-                                    adultos de <strong>18 años</strong> en adelante!
-                                    <i class="fa-solid fa-lemon" style="color: rgb(255, 212, 59);"></i>
-                                </p>
-                                <a href="https://www.instagram.com/easy_.peasy_english/" target="_blank"
-                                    class="btn fw-bold text-white rounded-pill px-4"
-                                    style="background-color: #FF1493; color: #FFFF !important;">Ver en Instagram</a>
+                            </div>
+                            <!-- Imagen -->
+                            <div
+                                class="col-11 col-md-8 col-xl-4 col-xxl-6 text-center position-relative px-3 px-xl-0 mt-4 mt-xl-0">
+                                <div class="p-3 bg-white rounded-5 shadow-lg transform-hover mx-auto"
+                                    style="transition: 0.3s; max-width: 550px;">
+                                    <img class="img-fluid rounded-5 w-100" src="public/img/Happy_House_03.jpeg"
+                                        alt="Clase 4" style="object-fit: cover; height: 450px;" />
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Item 5 -->
                     <div class="carousel-item">
-                        <div class="row g-0 align-items-center bg-white">
-                            <div class="col-md-6">
-                                <img src="public/img/Happy_House_04.jpeg" class="d-block w-100" alt="Clase 2"
-                                    style="height: 450px; object-fit: cover;">
-                            </div>
-                            <div class="col-md-6 p-4 text-dark text-start">
-                                <div class="d-flex align-items-center mb-3">
-                                    <img src="public/img/Limoncillo.jpg" class="rounded-circle me-2" width="40">
-                                    <span class="fw-bold">easy_.peasy_english</span>
+                        <div class="row g-0 align-items-center justify-content-center">
+                            <!-- Texto -->
+                            <div class="col-12 col-xl-7 col-xxl-6 ps-lg-5 mb-5 mb-xl-0">
+                                <div class="text-center text-xl-start ps-lg-5">
+                                    <div
+                                        class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm">
+                                        <i class="fa-brands fa-instagram me-2"></i> easy_.peasy_english
+                                    </div>
+                                    <h1 class="display-5 fw-bold mb-4" style="line-height: 1.1;">
+                                        A tu propio <br> <span style="color: #FFD43B;">ritmo</span>
+                                    </h1>
+                                    <p class="lead fw-normal mb-5 opacity-90 px-4 px-xl-0">
+                                        Nuestras clases <strong><span
+                                                style="color:#FF1493;">PERSONALIZADAS</span></strong> se adaptan al
+                                        ritmo de cada alumno.
+                                        ¡Inscripciones abiertas para <strong><span
+                                                style="color:#FFD43B;">MAYO</span></strong>!<i
+                                            class="fa-solid fa-rocket" style="color:red;"></i> <i
+                                            class="fa-solid fa-book" style="color: #FF1493;"></i>
+                                    </p>
+                                    <div
+                                        class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start px-4 px-xl-0">
+                                        <a class="btn btn-lg px-5 py-3 shadow-lg fw-bold text-white"
+                                            href="https://www.instagram.com/easy_.peasy_english/" target="_blank"
+                                            style="background-color: #FF1493; border-radius: 50px; border: none;">
+                                            <i class="fa-brands fa-instagram me-2"></i>Ver en Instagram
+                                        </a>
+                                    </div>
                                 </div>
-                                <p class="mb-4">Nuestras clases personalizadas se adaptan al ritmo de cada alumno.
-                                    ¡Inscripciones abiertas para mayo! 📚🚀</p>
-                                <a href="https://www.instagram.com/easy_.peasy_english/" target="_blank"
-                                    class="btn fw-bold text-white rounded-pill px-4"
-                                    style="background-color: #FF1493; color: #FFFF !important;">Ver en Instagram</a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row g-0 align-items-center bg-white">
-                            <div class="col-md-6">
-                                <img src="public/img/Happy_House_05.jpeg" class="d-block w-100" alt="Clase 2"
-                                    style="height: 450px; object-fit: cover;">
-                            </div>
-                            <div class="col-md-6 p-4 text-dark text-start">
-                                <div class="d-flex align-items-center mb-3">
-                                    <img src="public/img/Limoncillo.jpg" class="rounded-circle me-2" width="40">
-                                    <span class="fw-bold">easy_.peasy_english</span>
+                            <!-- Imagen -->
+                            <div
+                                class="col-11 col-md-8 col-xl-4 col-xxl-6 text-center position-relative px-3 px-xl-0 mt-4 mt-xl-0">
+                                <div class="p-3 bg-white rounded-5 shadow-lg transform-hover mx-auto"
+                                    style="transition: 0.3s; max-width: 550px;">
+                                    <img class="img-fluid rounded-5 w-100" src="public/img/Happy_House_04.jpeg"
+                                        alt="Clase 5" style="object-fit: cover; height: 450px;" />
                                 </div>
-                                <p class="mb-4">Nuestras clases personalizadas se adaptan al ritmo de cada alumno.
-                                    ¡Inscripciones abiertas para mayo! 📚🚀</p>
-                                <a href="https://www.instagram.com/easy_.peasy_english/" target="_blank"
-                                    class="btn fw-bold text-white rounded-pill px-4"
-                                    style="background-color: #FF1493; color: #FFFF !important;">Ver en Instagram</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#instaCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#instaCarousel" data-bs-slide="prev"
+                    style="width: 5%;">
+                    <span class="carousel-control-prev-icon bg-dark p-2 rounded-circle" aria-hidden="true"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#instaCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                <button class="carousel-control-next" type="button" data-bs-target="#instaCarousel" data-bs-slide="next"
+                    style="width: 5%;">
+                    <span class="carousel-control-next-icon bg-dark p-2 rounded-circle" aria-hidden="true"></span>
                 </button>
             </div>
         </div>
