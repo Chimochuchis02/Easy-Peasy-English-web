@@ -57,3 +57,46 @@ main,
 .wa-hover:hover {
     color: #25D366 !important;
 }
+
+.custom-tabs-container {
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    display: inline-flex;
+    overflow: hidden;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+.custom-tabs-container .nav-link {
+    color: #333;
+    font-weight: 700;
+    border-radius: 0;
+    padding: 1rem 2rem;
+    border-right: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.custom-tabs-container .nav-item:last-child .nav-link {
+    border-right: none;
+}
+
+.custom-tabs-container .nav-link.active {
+    background-color: #FF1493 !important;
+    color: white !important;
+}
+
+.blob-shape {
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+}
+
+.blob-shape-alt {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
