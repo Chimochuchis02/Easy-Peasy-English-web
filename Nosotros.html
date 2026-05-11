@@ -1,20 +1,207 @@
 <link rel="icon" type="icon/x-icon" href="/public/img/Limoncillo.jpg">
 <div include-html="Layouts/header.html"></div>
 
-<main>
-    <!--Hero Section -->
-    <section>
+<main style="padding-top: 100px;">
+    <!-- 1. Hero Section: Teacher Profile -->
+    <section class="py-5 position-relative overflow-hidden bg-white">
+        <!-- Decoraciones de fondo -->
+        <div class="position-absolute blob-shape d-none d-lg-block"
+            style="width: 400px; height: 400px; background-color: #00AEEF; top: -10%; right: -5%; opacity: 0.1; z-index: 0;">
+        </div>
+        <div class="position-absolute rounded-circle d-none d-lg-block"
+            style="width: 200px; height: 200px; background-color: #FF1493; bottom: 5%; left: -2%; opacity: 0.15; z-index: 0;">
+        </div>
 
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row align-items-center">
+                <!-- Foto de la Teacher -->
+                <div class="col-lg-5 text-center mb-5 mb-lg-0 position-relative">
+                    <!-- Figura decorativa detrás de la foto -->
+                    <div class="position-absolute top-50 start-50 translate-middle blob-shape-alt shadow-lg d-none d-sm-block"
+                        style="width: 350px; height: 350px; background-color: #FFD43B; z-index: -1;"></div>
+                    <img src="public/img/teacher_peasy.jpeg" class="img-fluid rounded-circle shadow-lg" alt="Teacher Ro"
+                        style="width: 320px; height: 320px; object-fit: cover; border: 8px solid white;">
+                </div>
+                <!-- Texto -->
+                <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+                    <div class="badge mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm"
+                        style="background-color: #FF1493; color: white;">
+                        CONOCE A TU TEACHER
+                    </div>
+                    <h1 class="display-4 fw-bold mb-4" style="color: #00AEEF;">
+                        Hello! I am <br><span style="color: #FF1493;">Teacher Ro</span>
+                    </h1>
+                    <p class="lead fw-normal text-secondary mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p class="text-secondary mb-0">
+                        <strong>Educación y Experiencia:</strong> Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!--About Us Section-->
-    <section>
+    <!-- 2. Methodology Section -->
+    <section class="py-5 position-relative overflow-hidden" style="background-color: #00AEEF;">
+        <!-- Decoraciones -->
+        <div class="position-absolute blob-shape"
+            style="width: 300px; height: 300px; background-color: #FFD43B; top: -10%; left: -5%; opacity: 0.9; z-index: 0;">
+        </div>
+        <div class="position-absolute rounded-pill"
+            style="width: 150px; height: 40px; background-color: #FF1493; bottom: 20%; right: 10%; transform: rotate(-15deg); opacity: 0.9; z-index: 0;">
+        </div>
 
+        <div class="container position-relative py-4" style="z-index: 2;">
+            <div class="text-center mb-5 text-white">
+                <div class="badge mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm text-dark"
+                    style="background-color: #FFD43B;">
+                    NUESTRA FORMA DE ENSEÑAR
+                </div>
+                <h2 class="display-5 fw-bold mb-3">Metodología Easy Peasy</h2>
+                <p class="lead fw-normal mx-auto" style="max-width: 800px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Metodologia 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-lg rounded-5 p-4 text-center transform-hover"
+                        style="transition: 0.3s;">
+                        <div class="mb-4 mx-auto d-inline-flex align-items-center justify-content-center rounded-circle shadow"
+                            style="width: 70px; height: 70px; background-color: #FF1493; color: white;">
+                            <i class="fa-solid fa-gamepad fa-2xl"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3" style="color: #FF1493;">Aprende Jugando</h4>
+                        <p class="text-secondary mb-0">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
+                        </p>
+                    </div>
+                </div>
+                <!-- Metodologia 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-lg rounded-5 p-4 text-center transform-hover"
+                        style="transition: 0.3s;">
+                        <div class="mb-4 mx-auto d-inline-flex align-items-center justify-content-center rounded-circle shadow"
+                            style="width: 70px; height: 70px; background-color: #FFD43B; color: #000;">
+                            <i class="fa-solid fa-ear-listen fa-2xl"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3" style="color: #00AEEF;">Inmersión Auditiva</h4>
+                        <p class="text-secondary mb-0">
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo.
+                        </p>
+                    </div>
+                </div>
+                <!-- Metodologia 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-lg rounded-5 p-4 text-center transform-hover"
+                        style="transition: 0.3s;">
+                        <div class="mb-4 mx-auto d-inline-flex align-items-center justify-content-center rounded-circle shadow"
+                            style="width: 70px; height: 70px; background-color: #F78E1E; color: white;">
+                            <i class="fa-solid fa-comments fa-2xl"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3" style="color: #F78E1E;">Práctica Real</h4>
+                        <p class="text-secondary mb-0">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!--Testimonials Section -->
-    <section>
+    <!-- 3. Modalities and Courses Section -->
+    <section class="py-5 position-relative overflow-hidden bg-light">
+        <!-- Decoraciones -->
+        <div class="position-absolute rounded-circle d-none d-lg-block"
+            style="width: 250px; height: 250px; background-color: #FF1493; top: -5%; right: -5%; opacity: 0.1; z-index: 0;">
+        </div>
 
+        <div class="container position-relative py-4" style="z-index: 2;">
+            <div class="text-center mb-5">
+                <div class="badge mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm"
+                    style="background-color: #FFD43B; color: #000;">
+                    DESCUBRE TUS OPCIONES
+                </div>
+                <h2 class="display-5 fw-bold mb-3" style="color: #00AEEF;">Modalidades y <span
+                        style="color: #FF1493;">Cursos</span></h2>
+                <p class="lead fw-normal text-secondary mx-auto" style="max-width: 700px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus
+                    error.
+                </p>
+            </div>
+
+            <div class="row align-items-center justify-content-center g-5">
+                <!-- Modalidad Presencial -->
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-lg rounded-5 overflow-hidden transform-hover"
+                        style="transition: 0.3s;">
+                        <img src="public/img/Happy_House.jpeg" class="card-img-top" alt="Clases Presenciales"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4 p-md-5 position-relative">
+                            <div class="position-absolute top-0 end-0 translate-middle-y me-4 d-inline-flex align-items-center justify-content-center rounded-circle shadow-lg"
+                                style="width: 60px; height: 60px; background-color: #00AEEF; color: white;">
+                                <i class="fa-solid fa-users fa-xl"></i>
+                            </div>
+                            <h3 class="fw-bold mb-3" style="color: #00AEEF;">Modalidad Presencial</h3>
+                            <p class="text-secondary mb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a
+                                pharetra augue. Donec id elit non mi porta gravida at eget metus.
+                            </p>
+                            <ul class="list-unstyled mb-0 text-secondary">
+                                <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Lorem ipsum dolor
+                                    sit amet</li>
+                                <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Consectetur
+                                    adipiscing elit</li>
+                                <li><i class="fa-solid fa-check text-success me-2"></i> Sed do eiusmod tempor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modalidad En Línea -->
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-lg rounded-5 overflow-hidden transform-hover"
+                        style="transition: 0.3s;">
+                        <img src="public/img/placeholder_course2.jpg" class="card-img-top" alt="Clases en Línea"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4 p-md-5 position-relative">
+                            <div class="position-absolute top-0 end-0 translate-middle-y me-4 d-inline-flex align-items-center justify-content-center rounded-circle shadow-lg"
+                                style="width: 60px; height: 60px; background-color: #F78E1E; color: white;">
+                                <i class="fa-solid fa-laptop fa-xl"></i>
+                            </div>
+                            <h3 class="fw-bold mb-3" style="color: #F78E1E;">Modalidad En Línea</h3>
+                            <p class="text-secondary mb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a
+                                pharetra augue. Donec id elit non mi porta gravida at eget metus.
+                            </p>
+                            <ul class="list-unstyled mb-0 text-secondary">
+                                <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Lorem ipsum dolor
+                                    sit amet</li>
+                                <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Consectetur
+                                    adipiscing elit</li>
+                                <li><i class="fa-solid fa-check text-success me-2"></i> Sed do eiusmod tempor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="Cursos.html" class="btn btn-lg px-5 py-3 fw-bold shadow-lg text-white transform-hover"
+                    style="background-color: #FF1493; border-radius: 50px; transition: 0.3s;">
+                    Ver todos los cursos
+                </a>
+            </div>
+        </div>
     </section>
 </main>
 
