@@ -1,39 +1,39 @@
 <link rel="icon" type="icon/x-icon" href="/public/img/Limoncillo.jpg">
 <div include-html="Layouts/header.html"></div>
 
-<main class="text-center" style="padding-top: 130px;">
-
-    <!-- Tab Navigation -->
-    <div class="container position-relative z-3 text-center">
-        <div class="custom-tabs-container flex-column flex-md-row">
-            <ul class="nav nav-pills mb-0 flex-nowrap" id="cursos-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="presencial-tab" data-bs-toggle="pill"
-                        data-bs-target="#presencial" type="button" role="tab" aria-selected="true">CURSOS
-                        PRESENCIALES</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="linea-tab" data-bs-toggle="pill" data-bs-target="#linea" type="button"
-                        role="tab" aria-selected="false">CURSOS EN LÍNEA</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="verano-tab" data-bs-toggle="pill" data-bs-target="#verano"
-                        type="button" role="tab" aria-selected="false">
-                        <span>CURSOS PRESENCIALES:<br>VERANO</span>
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="invierno-tab" data-bs-toggle="pill" data-bs-target="#invierno"
-                        type="button" role="tab" aria-selected="false">
-                        <span>CURSOS EN LÍNEA:<br>INVIERNO/VERANO</span>
-                    </button>
-                </li>
-            </ul>
+<main class="text-center" style="padding-top: 90px;">
+    <div class="position-relative w-100">
+        <!-- Tab Navigation -->
+        <div class="container position-absolute z-3 text-center start-50 translate-middle-x" style="top: 2.5rem;">
+            <div class="custom-tabs-container flex-column flex-md-row" style="margin-top: 0;">
+                <ul class="nav nav-pills mb-0 flex-nowrap" id="cursos-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="presencial-tab" data-bs-toggle="pill"
+                            data-bs-target="#presencial" type="button" role="tab" aria-selected="true">CURSOS
+                            PRESENCIALES</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="linea-tab" data-bs-toggle="pill" data-bs-target="#linea" type="button"
+                            role="tab" aria-selected="false">CURSOS EN LÍNEA</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="verano-tab" data-bs-toggle="pill" data-bs-target="#verano"
+                            type="button" role="tab" aria-selected="false">
+                            <span>CURSOS PRESENCIALES:<br>VERANO</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="invierno-tab" data-bs-toggle="pill" data-bs-target="#invierno"
+                            type="button" role="tab" aria-selected="false">
+                            <span>CURSOS EN LÍNEA:<br>INVIERNO/VERANO</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <!-- Tab Content -->
-    <div class="tab-content text-start" id="cursos-tabContent" style="margin-top: -3.5rem;">
+        <!-- Tab Content -->
+        <div class="tab-content text-start" id="cursos-tabContent">
 
         <!-- Tab 1: Cursos Presenciales -->
         <div class="tab-pane fade show active" id="presencial" role="tabpanel" aria-labelledby="presencial-tab"
@@ -164,6 +164,7 @@
             </section>
         </div>
 
+    </div>
     </div>
 </main>
 

@@ -82,6 +82,7 @@ main,
     align-items: center;
     justify-content: center;
     text-align: center;
+    height: 100%;
 }
 
 .custom-tabs-container .nav-item:last-child .nav-link {
