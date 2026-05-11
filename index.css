@@ -29,8 +29,6 @@ main,
     flex: 1;
 }
 
-
-
 /* Clase para la animación de las redes sociales */
 .social-icon-footer {
     transition: all 0.3s ease-in-out;
@@ -89,8 +87,23 @@ main,
     border-right: none;
 }
 
-.custom-tabs-container .nav-link.active {
-    background-color: #FF1493 !important;
+.custom-tabs-container .nav-link.active #presencial-tab {
+    background-color: #1877F2;
+    color: white !important;
+}
+
+.custom-tabs-container .nav-link.active #linea-tab {
+    background-color: #F78E1E !important;
+    color: white !important;
+}
+
+.custom-tabs-container .nav-link.active #verano-tab {
+    background-color: #FF1493;
+    color: white !important;
+}
+
+.custom-tabs-container .nav-link.active #invierno-tab {
+    background-color: #FFD43B;
     color: white !important;
 }
 
