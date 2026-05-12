@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     try {
         // 1. "Pedimos" el archivo JSON
-        const respuesta = await fetch('Easy-Peasy-English-web/ejercicios.json');
+        const respuesta = await fetch('ejercicios.json');
 
         // 2. Convertimos el texto del archivo en un Objeto de JS
         const ejercicios = await respuesta.json();
