@@ -109,23 +109,34 @@ main,
 
 @media (max-width: 768px) {
     .custom-tabs-container {
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        max-width: 400px;
+        border-radius: 50px;
+        display: inline-flex;
+        flex-direction: row;
+        width: 95%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        justify-content: flex-start;
+        scrollbar-width: none; /* Firefox */
+    }
+    .custom-tabs-container::-webkit-scrollbar {
+        display: none; /* Chrome/Safari */
+    }
+    .custom-tabs-container .nav-pills {
+        flex-wrap: nowrap !important;
+        flex-direction: row !important;
     }
     .custom-tabs-container .nav-link {
-        border-right: none;
-        border-bottom: 1px solid #dee2e6;
-        padding: 12px 15px;
-        font-size: 0.9rem;
+        border-right: 1px solid #dee2e6 !important;
+        border-bottom: none !important;
+        padding: 10px 15px;
+        font-size: 0.75rem;
+        white-space: nowrap;
     }
     .custom-tabs-container .nav-item:last-child .nav-link {
-        border-bottom: none;
+        border-right: none !important;
     }
     .hero-tabs-padding {
-        padding-top: 16rem !important;
+        padding-top: 10rem !important;
     }
 }
 
